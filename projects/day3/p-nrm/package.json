@@ -1,0 +1,18 @@
+{
+  "name": "p-nrm",
+  "version": "1.0.0",
+  "description": "an npm registry tool",
+  "main": "index.js",
+  "bin": {
+    "p-nrm": "bin/index.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "pipu",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
+}

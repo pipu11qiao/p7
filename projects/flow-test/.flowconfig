@@ -1,0 +1,5 @@
+[options]
+exact_by_default=true
+
+[ignore]
+.*/node_modules/.*

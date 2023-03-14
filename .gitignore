@@ -1,0 +1,9 @@
+.idea
+.DS_Store
+*.swp
+say
+node_modules
+
+# production
+/build
+/dist
