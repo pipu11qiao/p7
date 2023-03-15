@@ -1,1 +1,15 @@
-@import './color.scss'
+@import './color.scss';
+@import './font.scss';
+
+$borderRadius: 7px;
+
+
+// small padding
+$smallPaddingTop: 2px;
+$smallPaddingLeft: 5px;
+// default padding
+$defaultPaddingTop: 5px;
+$defaultPaddingLeft: 10px;
+// large padding
+$largePaddingTop: 9px;
+$largePaddingLeft: 14px;
