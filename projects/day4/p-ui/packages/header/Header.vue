@@ -1,10 +1,12 @@
 <template>
-  <button class="p-nav">
+  <div class="p-header">
     <slot></slot>
-  </button>
+  </div>
 </template>
 <script>
   export default {
-    name: 'PNav'
+    name: 'PHeader'
   }
+</script>
+<script setup>
 </script>

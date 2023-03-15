@@ -1,14 +1,16 @@
 const { version, name } = require("../package.json");
-import Button from "../packages/button";
-import { Nav } from "../packages/nav";
+import * as Componets from "../packages";
+export * from "../packages";
+
 const install = (app) => {
-  app.use(Button);
-  app.use(Nav);
-  console.log(`app`, app);
+  Object.keys(Componets).forEach((key) => {
+    app.use(Componets[key]);
+  });
 };
 
 export default {
   version,
   name,
   install,
+  ...Componets,
 };

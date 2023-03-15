@@ -1,11 +1,11 @@
 <template>
-  <div class="[className]">
+  <div class="p-container">
     <slot></slot>
   </div>
 </template>
 <script>
   export default {
-    name: '[vueComponentName]'
+    name: 'PContainer'
   }
 </script>
 <script setup>

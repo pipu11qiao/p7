@@ -23,7 +23,7 @@ const colorInfo = {
       valueArr: ["#909399", "#82848a", "#a6a9ad", "#fff"],
     },
     {
-      field: "waring",
+      field: "warning",
       valueArr: ["#e6a23c", "#cf9236", "#ebb563", "#fff"],
     },
     {

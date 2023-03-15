@@ -1,0 +1,92 @@
+@import "./base.scss";
+
+.p-button {
+  border-radius: $borderRadius;
+  padding: $defaultPaddingTop $defaultPaddingLeft;
+  border: 1px solid;
+}
+
+.p-button--large {
+  padding: $largePaddingTop $largePaddingLeft;
+}
+.p-button--small {
+  padding: $smallPaddingTop $smallPaddingLeft;
+}
+
+.p-button--default {
+  background-color: $defaultColor;
+  color: $defaultTextColor;
+  border-color: $defaultTextColor;
+}
+.p-button--default:hover {
+  background-color: $defaultHoverColor;
+  border-color: $defaultHoverColor;
+}
+.p-button--default:active {
+  border-color: $defaultActiveColor;
+}
+
+.p-button--primary {
+  background-color: $primaryColor;
+  color: $primaryTextColor;
+  border-color: $primaryTextColor;
+}
+.p-button--primary:hover {
+  background-color: $primaryHoverColor;
+  border-color: $primaryHoverColor;
+}
+.p-button--primary:active {
+  border-color: $primaryActiveColor;
+}
+
+.p-button--success {
+  background-color: $successColor;
+  color: $successTextColor;
+  border-color: $successTextColor;
+}
+.p-button--success:hover {
+  background-color: $successHoverColor;
+  border-color: $successHoverColor;
+}
+.p-button--success:active {
+  border-color: $successActiveColor;
+}
+
+.p-button--info {
+  background-color: $infoColor;
+  color: $infoTextColor;
+  border-color: $infoTextColor;
+}
+.p-button--info:hover {
+  background-color: $infoHoverColor;
+  border-color: $infoHoverColor;
+}
+.p-button--info:active {
+  border-color: $infoActiveColor;
+}
+
+.p-button--warning {
+  background-color: $warningColor;
+  color: $warningTextColor;
+  border-color: $warningTextColor;
+}
+.p-button--warning:hover {
+  background-color: $warningHoverColor;
+  border-color: $warningHoverColor;
+}
+.p-button--warning:active {
+  border-color: $warningActiveColor;
+}
+
+.p-button--danger {
+  background-color: $dangerColor;
+  color: $dangerTextColor;
+  border-color: $dangerTextColor;
+}
+.p-button--danger:hover {
+  background-color: $dangerHoverColor;
+  border-color: $dangerHoverColor;
+}
+.p-button--danger:active {
+  border-color: $dangerActiveColor;
+}

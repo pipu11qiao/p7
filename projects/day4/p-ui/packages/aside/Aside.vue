@@ -1,10 +1,12 @@
 <template>
-  <button class="p-component">
+  <div class="p-aside">
     <slot></slot>
-  </button>
+  </div>
 </template>
 <script>
   export default {
-    name: 'PComponent'
+    name: 'PAside'
   }
+</script>
+<script setup>
 </script>

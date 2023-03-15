@@ -1,11 +1,11 @@
 <template>
-  <div class="[className]">
+  <div class="p-main">
     <slot></slot>
   </div>
 </template>
 <script>
   export default {
-    name: '[vueComponentName]'
+    name: 'PMain'
   }
 </script>
 <script setup>

@@ -1,7 +1,8 @@
 @import './base.scss';
 @import './layout.scss';
 
-.test {
-  display: flex;
-  color: $primaryColor;
-}
+@import './button.scss';
+@import './aside.scss';
+@import './header.scss';
+@import './main.scss';
+@import './container.scss';
