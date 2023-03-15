@@ -1,3 +1,7 @@
+
+const createComponent = require("./createComponent/index");
+const { createComponentBaseFile } = createComponent;
+
 function getVarStr(info, { rendertitle } = {}) {
   let str = "";
   const { fieldArr, data } = info;
@@ -14,7 +18,7 @@ function getVarStr(info, { rendertitle } = {}) {
   });
   return str;
 }
-
 module.exports = {
   getVarStr,
+  createComponentBaseFile,
 };
