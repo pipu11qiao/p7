@@ -21,10 +21,23 @@ let { data } = dataObj;
 if (argv.indexOf("-v") > -1) {
   console.log(`${name} v${version}`);
 } else if (argv.indexOf("ls") > -1) {
-  data.forEach((item) => {
-    for (let key in item) {
-      console.log(`${key} => ${item[key]}`);
+  const { exec } = require("child_process");
+  exec(`npm config get registry`, (err, stdout, stderr) => {
+    if (err) {
+      console.error(`exec error: ${err.message}`);
+      retrurn;
     }
+    data.forEach((item) => {
+      for (let key in item) {
+        let str;
+        if (item[key].trim() === stdout.trim()) {
+          str = "*";
+        } else {
+          str = " ";
+        }
+        console.log(`${str}${key} => ${item[key]}`);
+      }
+    });
   });
 } else if (argv.indexOf("add") > -1) {
   let index = argv.indexOf("add");
@@ -54,7 +67,7 @@ if (argv.indexOf("-v") > -1) {
   let res = dataObj.data.filter((item) => !!item[key]);
   if (res.length > 0) {
     const { exec } = require("child_process");
-    exec(`npm config set registery ${res[0][key]}`, (err, stdout, stderr) => {
+    exec(`npm config set registry ${res[0][key]}`, (err, stdout, stderr) => {
       if (err) {
         console.log(`set registry error: ${err.message}`);
         retrurn;
@@ -64,4 +77,12 @@ if (argv.indexOf("-v") > -1) {
   } else {
     console.log(`${key} is not in p-nrm list`);
   }
+}else if(process.argv.indexOf('-h')!=-1){
+  console.log(`
+  add: p-nrm add key value can add registry address to list
+  del: p-nrm del key can delete key of list
+  ls: p-nrm ls can show all list
+  clear: p-nrm clear can clear list
+  -v: p-nrm -v can show version
+  `)
 }

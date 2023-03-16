@@ -1,6 +1,6 @@
 {
   "name": "p-nrm",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "an npm registry tool",
   "main": "index.js",
   "bin": {
@@ -14,5 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.4.3"
+  },
+  "dependencies": {
+    "p-nrm": "file:p-nrm-1.0.3.tgz"
   }
 }
