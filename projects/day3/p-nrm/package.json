@@ -1,6 +1,6 @@
 {
   "name": "p-nrm",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "an npm registry tool",
   "main": "index.js",
   "bin": {

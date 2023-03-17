@@ -43,7 +43,7 @@ if (argv.indexOf("-v") > -1) {
   let index = argv.indexOf("add");
 
   let key = argv[index + 1];
-  let value = argv[index + 1];
+  let value = argv[index + 2];
   let res = dataObj.data.filter((item) => !!item[key]);
   if (res.length === 0) {
     dataObj.data.push({
