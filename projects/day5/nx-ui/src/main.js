@@ -1,9 +1,9 @@
 import Vue from "vue";
 import App from "./App.vue";
 import Demo from "../packages/components/demo/index.js";
-import "../packages/css/demo.css";
+// import "../packages/css/demo.css";
 import Button from "../packages/components/button/index.js";
-import "../packages/css/button.css";
+// import "../packages/css/button.css";
 
 // 全局引入
 // 局部引入

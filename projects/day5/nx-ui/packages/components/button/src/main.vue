@@ -1,20 +1,23 @@
 <template>
-  <div class="nx-button">按钮</div>
+  <div class="nx-button">
+    <span>按钮</span>
+    <div class="nx-button-loading">*</div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'nx-button',
+  name: "nx-button",
   components: {},
   props: {},
   data() {
-    return {}
+    return {};
   },
   watch: {},
   computed: {},
   methods: {},
   created() {},
-  mounted() {}
-}
+  mounted() {},
+};
 </script>
 <style></style>
