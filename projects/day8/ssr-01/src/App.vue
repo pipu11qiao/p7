@@ -8,15 +8,15 @@ const count = ref(0);
   <br />
   <button @click="count++">{{ count }}</button>
   <br />
-  <router-link to="/a">-----A------</router-link>
+  <!-- <router-link to="/a">-----A------</router-link>
   <br />
   <router-link to="/b">-----B------</router-link>
   <br />
   <router-link to="/c">-----C------</router-link>
-  <br />
+  <br /> -->
   <!-- 路由出口 -->
   <!-- 路由匹配到的组件将渲染在这里 -->
-  <router-view></router-view>
+  <!-- <router-view></router-view> -->
 </template>
 
 <style scoped>

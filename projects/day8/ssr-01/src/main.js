@@ -1,12 +1,20 @@
-import { createApp } from "vue";
-import "./style.css";
+// import { createApp } from "vue";
+// import "./style.css";
+// import App from "./App.vue";
+// import router from "./router";
+
+// const app = createApp(App);
+// app.use(router);
+
+// app.mount("#app");
+
+import { createSSRApp } from "vue";
 import App from "./App.vue";
-import router from "./router";
 
-const app = createApp(App);
-app.use(router);
-
-app.mount("#app");
+export function createApp() {
+  const app = createSSRApp(App);
+  return app;
+}
 
 // import { createSSRApp } from "vue";
 
